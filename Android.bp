@@ -37,6 +37,50 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "com.samsung.node.smooth_transition",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.samsung.node.smooth_transition.so"],
+			shared_libs: ["libcamera_metadata", "libhardware", "libcom.qti.chinodeutils", "libcutils", "libdualcam_optical_zoom", "libmpbase", "libOpenCL", "liblog", "libc++", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.samsung.node.smooth_transition.so"],
+			shared_libs: ["libcamera_metadata", "libhardware", "libcom.qti.chinodeutils", "libcutils", "libdualcam_optical_zoom", "libmpbase", "libOpenCL", "liblog", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.wrapper.stats.aec",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/camera/components/com.wrapper.stats.aec.so"],
+			shared_libs: ["libcutils", "liblog", "libsync", "libqcwrappercommon", "libsecnativefeature", "libexpat", "libsensorlistener", "libc++", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/camera/components/com.wrapper.stats.aec.so"],
+			shared_libs: ["libcutils", "liblog", "libsync", "libqcwrappercommon", "libsecnativefeature", "libexpat", "libsensorlistener", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	relative_install_path: "camera/components",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "camera.qcom",
 	owner: "samsung",
 	strip: {
@@ -120,24 +164,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "com.samsung.node.smooth_transition",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/camera/components/com.samsung.node.smooth_transition.so"],
-			shared_libs: ["libcamera_metadata", "libhardware", "libcom.qti.chinodeutils", "libcutils", "libdualcam_optical_zoom", "libmpbase", "libOpenCL", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	relative_install_path: "camera/components",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "com.samsung.node.uniplugin_recording",
 	owner: "samsung",
 	strip: {
@@ -165,24 +191,6 @@ cc_prebuilt_library_shared {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/camera/components/com.samsung.node.uniplugin_vdis.so"],
 			shared_libs: ["libcom.qti.chinodeutils", "libcamera_metadata", "libcutils", "libuniplugin", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	relative_install_path: "camera/components",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "com.wrapper.stats.aec",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/camera/components/com.wrapper.stats.aec.so"],
-			shared_libs: ["libcutils", "liblog", "libsync", "libqcwrappercommon", "libsecnativefeature", "libexpat", "libsensorlistener", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",

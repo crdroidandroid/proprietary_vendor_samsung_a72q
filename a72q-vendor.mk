@@ -47,14 +47,14 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     com.samsung.sensor.hi847 \
+    com.samsung.node.smooth_transition \
+    com.wrapper.stats.aec \
     camera.qcom \
     com.samsung.chi.override \
     libsec2qc_conversion \
     com.qti.eeprom.sec2qcconversion \
-    com.samsung.node.smooth_transition \
     com.samsung.node.uniplugin_recording \
     com.samsung.node.uniplugin_vdis \
-    com.wrapper.stats.aec \
     libbauthserver \
     libbauthtzcommon \
     libegis_fp_normal_sensor_test \
