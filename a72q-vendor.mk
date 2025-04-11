@@ -31,30 +31,18 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a72q/proprietary/vendor/lib/camera/com.samsung.tuned.lsi_s5kgw1p.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.lsi_s5kgw1p.bin \
     vendor/samsung/a72q/proprietary/vendor/lib/camera/com.samsung.tuned.sony_imx682.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.sony_imx682.bin \
     vendor/samsung/a72q/proprietary/vendor/lib/camera/ois_mcu_stm32g_fw.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/ois_mcu_stm32g_fw.bin \
-    vendor/samsung/a72q/proprietary/vendor/lib/camera/uw_dual_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/uw_dual_calibration.bin \
-    vendor/samsung/a72q/proprietary/vendor/lib64/camera/com.samsung.sensormodule.0_0_sony_imx682.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.0_0_sony_imx682.bin \
-    vendor/samsung/a72q/proprietary/vendor/lib64/camera/com.samsung.sensormodule.0_2_sony_dv_imx682_hw_2.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.0_2_sony_dv_imx682_hw_2.bin \
-    vendor/samsung/a72q/proprietary/vendor/lib64/camera/com.samsung.sensormodule.0_3_lsi_dv_s5kgw1p_hw_2.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.0_3_lsi_dv_s5kgw1p_hw_2.bin \
-    vendor/samsung/a72q/proprietary/vendor/lib64/camera/com.samsung.sensormodule.0_3_lsi_dv_s5kgw1p_hw_2_otp.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.0_3_lsi_dv_s5kgw1p_hw_2_otp.bin \
-    vendor/samsung/a72q/proprietary/vendor/lib64/camera/com.samsung.sensormodule.3_0_hynix_hi847.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.3_0_hynix_hi847.bin \
-    vendor/samsung/a72q/proprietary/vendor/lib64/camera/com.samsung.sensormodule.3_1_hynix_dv_hi847_hw_2.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.3_1_hynix_dv_hi847_hw_2.bin \
-    vendor/samsung/a72q/proprietary/vendor/lib64/camera/com.samsung.sensormodule.4_lsi_gc5035_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.4_lsi_gc5035_macro.bin \
-    vendor/samsung/a72q/proprietary/vendor/lib64/camera/com.samsung.tuned.hynix_hi1336.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.hynix_hi1336.bin \
-    vendor/samsung/a72q/proprietary/vendor/lib64/camera/com.samsung.tuned.hynix_hi847.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.hynix_hi847.bin \
-    vendor/samsung/a72q/proprietary/vendor/lib64/camera/com.samsung.tuned.lsi_s5k3l6.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.lsi_s5k3l6.bin \
-    vendor/samsung/a72q/proprietary/vendor/lib64/camera/com.samsung.tuned.lsi_s5kgw1p.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.lsi_s5kgw1p.bin \
-    vendor/samsung/a72q/proprietary/vendor/lib64/camera/com.samsung.tuned.sony_imx682.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.sony_imx682.bin
+    vendor/samsung/a72q/proprietary/vendor/lib/camera/uw_dual_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/uw_dual_calibration.bin
 
 PRODUCT_PACKAGES += \
-    com.samsung.sensor.hi847 \
+    com.samsung.node.smooth_transition \
+    com.wrapper.stats.aec \
     camera.qcom \
     com.samsung.chi.override \
     libsec2qc_conversion \
     com.qti.eeprom.sec2qcconversion \
-    com.samsung.node.smooth_transition \
+    com.samsung.sensor.hi847 \
     com.samsung.node.uniplugin_recording \
     com.samsung.node.uniplugin_vdis \
-    com.wrapper.stats.aec \
     libbauthserver \
     libbauthtzcommon \
     libegis_fp_normal_sensor_test \
